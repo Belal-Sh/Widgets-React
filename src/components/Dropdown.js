@@ -37,7 +37,7 @@ const Dropdown = ({options, selected, onSelectedChange})=>{
     )
   })
   return (
-    <div ref={ref} className='ui form'>
+    <div ref={ref} className='ui form container'>
       <div className='field'>
         <label className='label'>Select a Color</label>
         <div
@@ -51,7 +51,9 @@ const Dropdown = ({options, selected, onSelectedChange})=>{
           </div>
         </div>
       </div>
+      <h1 style={{color:`${selected.value}`}}>This text is {selected.value}</h1>
     </div>
+
   )
 };
 
